@@ -9,7 +9,7 @@ let makeGridItem = (item, index) => {
       sold = `<span class="cake-message soldout">SOLD OUT!</span>`;
    }
 
-   let block = `<div id="card--${index}" class="card flex-item">
+   let productComponent = `<div id="card--${index}" class="card flex-item">
       <h3>#${index} CakeType: ${item.typeId}</h3>
       <div class="card-img" style="background-image: url('images/${item.image}')"></div>
       <div class="card-body">
@@ -20,7 +20,7 @@ let makeGridItem = (item, index) => {
       </div>
    </div>`;
 
-   return block;
+   return productComponent;
 };
 
 

@@ -6,7 +6,7 @@ let showWelcome = () => {
    const welcomeObj = welcomeData;
 
    //set a variable to hold the description
-   let cakeDesc = `<h3>We bake the most delicious pies and cake varieties like`;
+   let storeDesc = `<h3>We bake the most delicious pies and cake varieties like`;
 
    //make a shortcut to the array
    const cakeTypeArray = welcomeObj.cakeType;
@@ -17,19 +17,19 @@ let showWelcome = () => {
       if (index !== 0){
          //add the comma or the word and
          //ternary condition
-         cakeDesc += (index !== cakeTypeArray.length - 1) ? `, ` : `, and `;
+         storeDesc += (index !== cakeTypeArray.length - 1) ? `, ` : `, and `;
       }
 
       //add the topping
-      cakeDesc += ` ${element.cake}-${element.topping}`;
+      storeDesc += ` ${element.cake}-${element.topping}`;
    });
 
    //after all js runs, display the page content
-   let block = `<h2>${welcomeObj.name}!</h2>
-   ${cakeDesc}
+   let welcomeComponent = `<h2 class="brand">${welcomeObj.name}!</h2>
+   ${storeDesc}
    </h3>`;
 
-   return block;
+   return welcomeComponent;
 };
 
 

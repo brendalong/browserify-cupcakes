@@ -1,6 +1,13 @@
 #demo{
 
 }
+.brand{
+   color: hotpink;
+   font-size: 4em;
+}
+nav {
+   background-color: lightblue;
+}
 
 .flex-container{
    display: flex;
